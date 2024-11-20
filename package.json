@@ -1,5 +1,5 @@
 {
-  "name": "news_scraper",
+  "name": "newsaggregationwebsite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/AhmedTasleem/News_scraper/issues"
   },
-  "homepage": "https://github.com/AhmedTasleem/News_scraper#readme"
+  "homepage": "https://github.com/AhmedTasleem/News_scraper#readme",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  }
 }
