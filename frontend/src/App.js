@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center">News Aggregator</h1>
+      <h1 className="text-center">International Gazzette</h1>
       <div className="row">
         {news.map((article, index) => (
           <div className="col-md-4" key={index}>
