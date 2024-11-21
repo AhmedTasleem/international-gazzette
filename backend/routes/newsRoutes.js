@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const News = require('../models/news');
-
+require('dotenv').config();
 // Fetch news from an external API
 router.get('/fetch', async (req, res) => {
   try {
