@@ -2,3 +2,8 @@ Times of India Figma Link
 https://www.figma.com/design/DAiac24wtsJ0CTle4E0Tdi/Times-of-India-(Community)?node-id=0-1&t=ClLEGu7Gy8fNu16C-1
 
 Name of Website -- International Gazette
+
+http://localhost:5173/
+
+Weather API:
+ca28edaaba49e7ee070383a0e72e349a

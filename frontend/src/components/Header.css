@@ -1,0 +1,121 @@
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px 30px; /* Increased padding for larger header */
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Increased font size */
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Left section for language label and dropdown */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Increased gap between label and dropdown */
+}
+
+.header-left .language-label {
+  font-size: 16px;
+  color: #555;
+}
+
+.header-left .language-dropdown {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Center section for Date, Time, and Temp */
+.header-center {
+  display: flex;
+  gap: 25px; /* Increased gap between date, time, and temp */
+  justify-content: center;
+  color: #333;
+  font-size: 16px;
+}
+
+.header-center span {
+  display: inline-block;
+}
+
+/* Right section for Follow Us */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Increased gap between social links */
+}
+
+.header-right .social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px; /* Increased font size */
+  transition: color 0.3s ease;
+}
+
+.header-right .social-link img {
+  width: 30px; /* Increased logo size */
+  height: 30px;
+  margin-right: 5px;
+}
+
+.header-right .social-link i {
+  margin-left: 5px;
+  font-size: 20px; /* Increased icon size */
+}
+
+.header-right .social-link:hover {
+  color: #0073e6;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .header > div {
+    text-align: left;
+    width: 100%;
+  }
+
+  .header-center {
+    gap: 10px;
+  }
+
+  .header-right {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .header-center {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .header-right .social-link img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-left .language-dropdown {
+    font-size: 12px;
+    padding: 3px;
+  }
+}
