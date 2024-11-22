@@ -1,0 +1,24 @@
+.title-bar {
+    background-color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+  }
+  
+  .title-text {
+    font-family: 'Algerian', serif; /* Replace with the desired font */
+    font-size: 30px;
+    font-weight:550;
+    margin: 0;
+    text-align: center;
+    position: absolute; /* Position title absolutely */
+    left: 50%; /* Move to the middle of the container */
+    transform: translateX(-50%)
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }

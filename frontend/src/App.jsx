@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './components/Header';
-// import Categories from './components/Categories';
+import Title from './components/Title';
 
 const App = () => {
   return (
     <div>
       <Header />
+      <Title />
     </div>
   );
 };

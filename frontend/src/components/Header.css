@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f8f8f8;
-  padding: 20px 30px; /* Increased padding for larger header */
+  padding: 1px 20px; /* Increased padding for larger header */
   font-family: Arial, sans-serif;
-  font-size: 16px; /* Increased font size */
-  border-bottom: 2px solid #ddd;
+  font-size: 20px; /* Increased font size */
+  border-bottom: 2px solid #000;
   box-sizing: border-box;
 }
 
@@ -19,13 +19,13 @@
 }
 
 .header-left .language-label {
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
 }
 
 .header-left .language-dropdown {
   padding: 6px 10px;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
@@ -38,7 +38,7 @@
   gap: 25px; /* Increased gap between date, time, and temp */
   justify-content: center;
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .header-center span {
@@ -90,7 +90,7 @@
   }
 
   .header-center {
-    gap: 10px;
+    gap: 100px;
   }
 
   .header-right {
@@ -115,7 +115,7 @@
   }
 
   .header-left .language-dropdown {
-    font-size: 12px;
+    font-size: 20px;
     padding: 3px;
   }
 }
