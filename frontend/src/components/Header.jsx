@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css"; // Ensure your CSS file path is correct
+import "./Header.css";
 
 const Header = () => {
   // State for date, time, and temperature
@@ -21,9 +21,6 @@ const Header = () => {
     const success = (position) => {
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
-      // const YOUR_API_KEY = ca28edaaba49e7ee070383a0e72e349a
-
-      // Replace with your preferred weather API endpoint
       fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ca28edaaba49e7ee070383a0e72e349a&units=metric`)
         .then((response) => response.json())
         .then((data) => {
@@ -72,7 +69,7 @@ const Header = () => {
       {/* Right Section */}
       <div className="header-right">
         <span>Follow Us:</span>
-        <a href="https://www.instagram.com/ahmed_tasleem03" className="social-link">
+        <a href="https://www.instagram.com/gazetteinternational" className="social-link">
           <img src="/rb_136728.png" alt="Instagram" />
         </a>
         <a href="https://x.com/ahmedtasleem14" className="social-link">
