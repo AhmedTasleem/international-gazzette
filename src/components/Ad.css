@@ -1,0 +1,12 @@
+.adsense-ad-container {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%; /* or set a fixed width */
+  }
+  
+  /* Optional: if you want to control the size or aspect ratio of the ad */
+  .adsbygoogle {
+    width: 100% !important; /* Ensure it takes full width of its container */
+    height: auto;
+  }
+  
