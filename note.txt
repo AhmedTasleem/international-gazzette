@@ -7,3 +7,7 @@ http://localhost:5173/
 
 Weather API:
 ca28edaaba49e7ee070383a0e72e349a
+
+News API Key:
+For Development Purposes:
+9317057e1c2f4a46831357f52f2be78a

@@ -1,21 +1,30 @@
-// export default Title;
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import for navigation
 import './Title.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Title = () => {
-  const [theme, setTheme] = useState('light'); // State to track the current theme
+  const [theme, setTheme] = useState('light');
+  const navigate = useNavigate(); // React Router's navigation hook
 
   // Apply the theme to the body when it changes
   useEffect(() => {
-    document.body.setAttribute('data-theme', theme); // Update the `data-theme` attribute on the body
+    document.body.setAttribute('data-theme', theme);
   }, [theme]);
 
   // Toggle the theme between light and dark
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+  };
+
+  // Scroll to the footer when "About" is clicked
+  const handleScrollToFooter = () => {
+    const footer = document.getElementById('footer'); // Footer element ID
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+    }
   };
 
   return (
@@ -54,13 +63,37 @@ const Title = () => {
           {/* Menu Items */}
           <ul>
             <li>
-              <a href="#about">About</a>
+              <a
+                href=""
+                onClick={() => {
+                  navigate('/'); // Navigate to the Home page
+                }}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#feedback">Feedback</a>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  handleScrollToFooter(); // Scroll to the footer
+                }}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <a href="" onClick={(e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  handleScrollToFooter(); // Scroll to the footer
+                }}>Feedback</a>
+            </li>
+            <li>
+              <a href="" onClick={(e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  handleScrollToFooter(); // Scroll to the footer
+                }}>Contact Us</a>
             </li>
           </ul>
           {/* Theme Switcher */}
