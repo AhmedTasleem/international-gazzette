@@ -45,16 +45,6 @@ const Header = () => {
 
   return (
     <div className="header">
-      {/* Left Section */}
-      <div className="header-left">
-        <span className="language-label">Language:</span>
-        <select className="language-dropdown">
-          <option value="en">English</option>
-          <option value="fr">हिन्दी</option>
-          <option value="es">ಕನ್ನಡ</option>
-        </select>
-      </div>
-
       {/* Center Section */}
       <div className="header-center">
         <span>{formattedDate}</span>

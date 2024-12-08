@@ -18,7 +18,10 @@
 }
 
 .title-bar {
-  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--background-color);
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -186,6 +189,13 @@ input:checked + .slider:before {
 
 .offcanvas-body a:hover {
   color: #0056b3; /* Darker blue on hover */
+}
+
+/* Active link styling */
+.offcanvas-body a.active {
+  color: #007bff;
+  /* Blue color for active link */
+  font-weight: bold;
 }
 
 /* Styling for the Theme Switcher */

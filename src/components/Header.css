@@ -1,55 +1,43 @@
 /* Header container */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* Center all content horizontally */
   align-items: center;
+  /* Center all content vertically */
   background-color: #f8f8f8;
-  padding: 1px 20px; /* Increased padding for larger header */
+  padding: 10px 20px;
   font-family: Arial, sans-serif;
-  font-size: 20px; /* Increased font size */
+  font-size: 20px;
   border-bottom: 2px solid #000;
   box-sizing: border-box;
+  position: relative;
+  /* To allow left and right sections to stay */
 }
 
-/* Left section for language label and dropdown */
+/* Left section for menu (hamburger or logo) */
 .header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Increased gap between label and dropdown */
-}
-
-.header-left .language-label {
-  font-size: 20px;
-  color: #555;
-}
-
-.header-left .language-dropdown {
-  padding: 6px 10px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-  cursor: pointer;
+  position: absolute;
+  left: 20px;
 }
 
 /* Center section for Date, Time, and Temp */
 .header-center {
   display: flex;
-  gap: 25px; /* Increased gap between date, time, and temp */
+  gap: 25px;
+  align-items: center;
   justify-content: center;
   color: #333;
   font-size: 20px;
 }
 
-.header-center span {
-  display: inline-block;
-}
-
 /* Right section for Follow Us */
 .header-right {
+  position: absolute;
+  right: 20px;
   display: flex;
   align-items: center;
-  gap: 10px; /* Increased gap between social links */
+  gap: 10px;
 }
 
 .header-right .social-link {
@@ -57,19 +45,19 @@
   align-items: center;
   text-decoration: none;
   color: #333;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .header-right .social-link img {
-  width: 30px; /* Increased logo size */
+  width: 30px;
   height: 30px;
   margin-right: 5px;
 }
 
 .header-right .social-link i {
   margin-left: 5px;
-  font-size: 20px; /* Increased icon size */
+  font-size: 20px;
 }
 
 .header-right .social-link:hover {
@@ -80,21 +68,18 @@
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    align-items: center;
+    position: relative;
   }
 
-  .header > div {
-    text-align: left;
-    width: 100%;
+  .header-left,
+  .header-right {
+    position: static;
+    text-align: center;
   }
 
   .header-center {
-    gap: 100px;
-  }
-
-  .header-right {
-    justify-content: flex-start;
+    margin-top: 10px;
     gap: 10px;
   }
 }
@@ -112,10 +97,5 @@
   .header-right .social-link img {
     width: 20px;
     height: 20px;
-  }
-
-  .header-left .language-dropdown {
-    font-size: 20px;
-    padding: 3px;
   }
 }
